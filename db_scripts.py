@@ -11,13 +11,11 @@ def open():
     cursor = conn.cursor()
 
 
-
 def close():
     if cursor:
         cursor.close()
     if conn:
         conn.close()
-
 
 
 def do(query):
